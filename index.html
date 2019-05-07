@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Resource Input</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<form id="form-fill">
+		
+
+		<fieldset>
+			<h2 class="first-title">Enter Basic Details</h2>
+			<h3 class="first-small-title">of the Resource</h3>
+			<input type="text" id="name" name="name" placeholder="Resource Name">
+			<input type="text"  id="address" name="address" placeholder="Address">
+			<input type="text"  id="city" name="city" placeholder="City">
+			<input type="text"  id="state" name="state" placeholder="State Code">
+			<input type="text"  id="zip" name="zip" placeholder="Zip Code">
+
+			<input type="tel"  id="number" name="number" placeholder="Phone Number">
+			<input type="email" id="email" name="email" placeholder="Email">
+			<input type="url"  id="website" name="website" placeholder="Website">
+			
+		</fieldset>
+		<fieldset>
+			<h2 class="second-title">Select Tags Related</h2>
+			<input type="checkbox" id = "shelter" name="shelter" value="Shelter">Shelter<br>
+			<input type="checkbox" id = "food" name="food" value="Food">Food<br>
+			<input type="checkbox" id = "clothing" name="clothing" value="clothing">Clothing<br>
+			<input type="checkbox" id = "medical" name="medical" value="medical">Medical/Mental Help<br>
+			<input type="checkbox" id = "crisis" name="crisis" value="Crisis">Crisis Intervention<br>
+			<input type="checkbox" id = "legal" name="legal" value="Legal">Legal Help<br>
+			
+			
+		</fieldset>
+		<fieldset>
+			<h2 class="third-title">Any Additional Information</h2>
+			<textarea class="textarea" id = "info" placeholder="Timings, Church mandatory, Genders allowed, Ages allowed..."></textarea>
+			
+			<input type="button" name="authenticate" class="submit" value="authenticate" onclick="DLib.Authenticate()">
+			<input type="button" name="submit" class="submit" value="Submit" onclick="resourceEnter()">
+		</fieldset>
+
+	</form>
+	<script type="text/javascript" src="dist.js"></script>
+	<script type="text/javascript" src="button.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+</body>
+</html>
